@@ -1,15 +1,28 @@
 body {
-    background-image: url("https://imgur.com/e7EfM1V");
+    background-image: url("images/StrangerThingsbackdrop.jpeg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
 }
 
 h1 {
     text-align: center;
+    color: aliceblue;
 }
 
-.search {
+#search {
+    text-align: center; 
     justify-content: center;
+    height: 30px;
 }
 
+#submit{
+    text-align: center;
+    justify-content: center ;
+    background-color: black;
+    color: aliceblue;
+  
+
+}
 
 .container{
     display: flex;    
