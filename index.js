@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const containers = document.querySelector('.container')
 const singleCard = document.querySelector('#singleCard')
 const form = document.querySelector('form')
 
@@ -97,3 +97,22 @@ document.getElementById('status6').addEventListener('click', billyStatus)
 //     carddeck.classList.add('singleCard')
     
 // }
+form.addEventListener('keyup', e =>{
+    if (e.key == "Enter"){
+        let searchValue = form.value,
+        value = searchValue.toLowerCase();
+        containers.forEach(container =>{
+            if(value === container.dataset.name){
+                return container.style.display = "block";
+            }
+            container.style.display = "none"
+        })
+    }
+})
+form.addEventListener("keyup", () =>{
+    if(search.value != "") return;
+ 
+    containers.forEach(container =>{
+        container.style.display = "block";
+    })
+})
