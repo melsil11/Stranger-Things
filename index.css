@@ -50,21 +50,34 @@ h2 {
     
 }
 
-.image {
+.card img {
     justify-content: center;
-    max-width: 68%;
     margin: auto;
     padding: 10px;
+    display: block;
     
 }
 
 .button{
-    margin: auto;
-    padding: 5px;
+    /* margin: auto; */
+    margin-left: 40px;
     justify-content: center;
     background-color: black;
     color: aliceblue;
     text-align: center;
     height: 25px;
     width: 50px;
+    float: left;
+}
+
+.button1 {
+    float: right;
+    padding: 5px;
+    bottom: 0;
+    background-color: black;
+    color: aliceblue;
+    height: 25px;
+    width: 50px;
+    margin-right: 40px;
+
 }
