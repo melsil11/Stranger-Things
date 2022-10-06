@@ -58,6 +58,16 @@ h2 {
     
 }
 
+.hidden {
+    /* background-color: aliceblue; */
+    justify-content: center;
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    color: aliceblue;
+    font-size: 12px;
+}
+
 .button{
     /* margin: auto; */
     margin-left: 40px;
