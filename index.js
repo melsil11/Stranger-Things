@@ -1,3 +1,8 @@
+const container = document.querySelector('.container')
+const singleCard = document.querySelector('#singleCard')
+const form = document.querySelector('form')
+
+
 
 // function to display Eleven bio
 document.getElementById('bio1').addEventListener('click', elevenBio)
@@ -79,4 +84,16 @@ document.getElementById('status6').addEventListener('click', billyStatus)
 
 // function removeHandler() {
 //     document.getElementById('bio1').removeEventListener('click', elevenStatus)
+// }
+
+// show one card
+// const showOneCard = (card) => {
+//     while(singleCard.firstChild){
+//         singleCard.removeChild(singleCard.firstChild)
+//     }
+//     console.log(card)
+//     container.getElementsByClassName.display = 'none'
+//     const carddeck = document.createElement('div')
+//     carddeck.classList.add('singleCard')
+    
 // }
