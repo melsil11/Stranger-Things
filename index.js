@@ -1,13 +1,13 @@
-const containers = document.querySelector('.container')
-const singleCard = document.querySelector('#singleCard')
-const form = document.querySelector('form')
+const containers = document.getElementsByClassName('container')
+const singleCard = document.getElementById('card')
+const search = document.getElementsByClassName('searchBox')
 
 
 
 // function to display Eleven bio
 document.getElementById('bio1').addEventListener('click', elevenBio)
 function elevenBio(){
-    document.getElementById('hidden1').innerHTML ="Eleven was discovered in the woods by a group of kids that would soon become her friends. "
+    document.getElementById('hidden1').innerHTML ="Eleven was discovered in the woods by a group of kids that would soon become her family. Her new family would soon discover that she was no ordinary girl."
 }
 // Function to display if Eleven alive or dead
 document.getElementById('status1').addEventListener('click', elevenStatus)
@@ -17,7 +17,7 @@ function elevenStatus(){
 // Function to display Lucas Bio
 document.getElementById('bio2').addEventListener('click', lucasBio) 
 function lucasBio(){
-    document.getElementById('hidden2').innerHTML="Lucas is a sensable kid who believes in making responsible decisions."
+    document.getElementById('hidden2').innerHTML="Lucas is a sensable kid who found it hard to believe in Elevens powers until it became undeniable"
 }
 // function to display if Lucas is dead or alive
 document.getElementById('status2').addEventListener('click', lucasStatus)
@@ -27,7 +27,7 @@ function lucasStatus(){
 // function to display Steve bio
 document.getElementById('bio3').addEventListener('click', steveBio) 
 function steveBio(){
-    document.getElementById('hidden3').innerHTML="Once a hated character, Steve has had a character metamorphosis and is now a trusted friend."
+    document.getElementById('hidden3').innerHTML="Once a hated character, Steve has had a character metamorphosis and is now a trusted friend to the group."
 }
 // Function to display if Steve alive or dead
 document.getElementById('status3').addEventListener('click', steveStatus)
@@ -85,7 +85,7 @@ document.getElementById('status6').addEventListener('click', billyStatus)
 // function removeHandler() {
 //     document.getElementById('bio1').removeEventListener('click', elevenStatus)
 // }
-
+// ////////////// filter /////////////
 // show one card
 // const showOneCard = (card) => {
 //     while(singleCard.firstChild){
@@ -97,22 +97,28 @@ document.getElementById('status6').addEventListener('click', billyStatus)
 //     carddeck.classList.add('singleCard')
     
 // }
-form.addEventListener('keyup', e =>{
-    if (e.key == "Enter"){
-        let searchValue = form.value,
-        value = searchValue.toLowerCase();
-        containers.forEach(container =>{
-            if(value === container.dataset.name){
-                return container.style.display = "block";
-            }
-            container.style.display = "none"
-        })
-    }
-})
-form.addEventListener("keyup", () =>{
-    if(search.value != "") return;
+// search.addEventListener('keyup', e =>{
+//     if (e.key == "Enter"){
+//         let searcValue = search.value,
+//         value = searcValue.toLowerCase();
+//         containers.forEach(container =>{
+//             if(value === container.dataset.name){
+//                 return container.style.display = "block";
+//             }
+//             container.style.display = "none"
+//         })
+//     }
+// })
+// search.addEventListener("keyup", () =>{
+//     if(search.value != "") return;
  
-    containers.forEach(container =>{
-        container.style.display = "block";
-    })
-})
+//     containers.forEach(container =>{
+//         container.style.display = "block";
+//     })
+// })
+
+
+
+// const containers = document.getElementsByClassName('container')
+// const singleCard = document.getElementById('card')
+// const search = document.getElementsByClassName('searchBox')
