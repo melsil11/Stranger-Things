@@ -65,7 +65,67 @@ function billyStatus(){
     document.getElementById('hidden6').innerHTML ="Dead?"
 }
 
+// function to display Joyce bio
+document.getElementById('bio7').addEventListener('click', joyceBio)
+function joyceBio(){
+    document.getElementById('hidden7').innerHTML="A determined mother with a fierce left swing, Joyce protects her family from the evils that invade Hawkins. Not escaping the heartache of losing the man she loved, this fighter continues on. "
+}
+// Function to display if Joyce alive or dead
+document.getElementById('status7').addEventListener('click', joyceStatus)
+function joyceStatus(){
+    document.getElementById('hidden7').innerHTML ='Alive'
+}
 
+// function to display Robin bio
+document.getElementById('bio8').addEventListener('click', robinBio)
+function robinBio(){
+    document.getElementById('hidden8').innerHTML='A delightful newcomer to the season, Robin has quickly won the hearts of fans for her chemistry with pal Steve.'
+}
+// Function to display if Robin alive or dead
+document.getElementById('status8').addEventListener('click', robinStatus)
+function robinStatus(){
+    document.getElementById('hidden8').innerHTML ='Alive'
+}
+
+// function to display Dustin bio
+document.getElementById('bio9').addEventListener('click', dustinBio)
+function dustinBio(){
+    document.getElementById('hidden9').innerHTML='Not only book smart, Dustin has faced danger and demonstrated great courage facing the evil that has perpetrated Hawkins.'
+}
+// Function to display if Dustin alive or dead
+document.getElementById('status9').addEventListener('click', dustinStatus)
+function dustinStatus(){
+    document.getElementById('hidden9').innerHTML ='Alive'
+}
+
+// /////////////////////////////////////////////////////////
+// get search bar element
+const searchInput = document.getElementById("searchInput")
+
+// store name elements in array-like object
+const namesFromDOM = document.getElementsByClassName("card")
+
+// listen for user events
+searchInput.addEventListener("keyup", (event) => {
+    const { value } = event.target
+    
+    // get user search input converted to lowercase
+    const searchQuery = value.toLowerCase()
+    
+    for (const nameElement of namesFromDOM) {
+        // store name text and convert to lowercase
+        let name = nameElement.textContent.toLowerCase();
+        
+        // compare current name to search input
+        if (name.includes(searchQuery)) {
+            // found name matching search, display it
+            nameElement.style.display = "block"
+        } else {
+            // no match, don't display name
+            nameElement.style.display = "none"
+        }
+    }
+})
 
 
 
@@ -82,43 +142,3 @@ document.getElementById('status4').addEventListener('click', willStatus)
 document.getElementById('status5').addEventListener('click', maxStatus)  
 document.getElementById('status6').addEventListener('click', billyStatus) 
 
-// function removeHandler() {
-//     document.getElementById('bio1').removeEventListener('click', elevenStatus)
-// }
-// ////////////// filter /////////////
-// show one card
-// const showOneCard = (card) => {
-//     while(singleCard.firstChild){
-//         singleCard.removeChild(singleCard.firstChild)
-//     }
-//     console.log(card)
-//     container.getElementsByClassName.display = 'none'
-//     const carddeck = document.createElement('div')
-//     carddeck.classList.add('singleCard')
-    
-// }
-// search.addEventListener('keyup', e =>{
-//     if (e.key == "Enter"){
-//         let searcValue = search.value,
-//         value = searcValue.toLowerCase();
-//         containers.forEach(container =>{
-//             if(value === container.dataset.name){
-//                 return container.style.display = "block";
-//             }
-//             container.style.display = "none"
-//         })
-//     }
-// })
-// search.addEventListener("keyup", () =>{
-//     if(search.value != "") return;
- 
-//     containers.forEach(container =>{
-//         container.style.display = "block";
-//     })
-// })
-
-
-
-// const containers = document.getElementsByClassName('container')
-// const singleCard = document.getElementById('card')
-// const search = document.getElementsByClassName('searchBox')
