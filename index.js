@@ -147,11 +147,16 @@ document.getElementById('bio14').addEventListener('click', ericaBio)
 function ericaBio(){
     document.getElementById('hidden14').innerHTML='The fiery younger sister of Lucas, Erica has become a fierce fighter in the battle for Hawkins'
 }
-// Function to display if Nancy alive or dead
+// Function to display if Erica alive or dead
 document.getElementById('status14').addEventListener('click', ericaStatus)
 function ericaStatus(){
     document.getElementById('hidden14').innerHTML ='Alive'
 }
+
+// function for sound
+let myAudio = document.querySelector('#audio')
+myAudio.play()
+document.getElementById('myBody').addEventListener('click', myAudio)
 
 // /////////////////////////////////////////////////////////
 // get search bar element
@@ -181,11 +186,6 @@ searchInput.addEventListener("keyup", (event) => {
         }
     }
 })
-
-// function for sound
-let myAudio = document.querySelector('#audio')
-myAudio.play()
-
 
 document.getElementById('bio1').addEventListener('click', elevenBio)
 document.getElementById('bio2').addEventListener('click', lucasBio)  
