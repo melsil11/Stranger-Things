@@ -65,7 +65,7 @@ h2 {
     width: 250px;
     margin: auto;
     color: aliceblue;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .button{
@@ -92,6 +92,6 @@ h2 {
 
 }
 
-/* #audio {
-    display: none;
-} */
+#audio {
+    opacity: .05; 
+}

@@ -65,14 +65,14 @@ function billyStatus(){
     document.getElementById('hidden6').innerHTML ="Dead?"
 }
 
-// function to display Joyce bio
-document.getElementById('bio7').addEventListener('click', joyceBio)
-function joyceBio(){
-    document.getElementById('hidden7').innerHTML="A determined mother with a fierce left swing, Joyce protects her family from the evils that invade Hawkins. Not escaping the heartache of losing the man she loved, this fighter continues on. "
+// function to display Johnathan bio
+document.getElementById('bio7').addEventListener('click', johnBio)
+function johnBio(){
+    document.getElementById('hidden7').innerHTML='Once considered a loner, Johnathan has demonstrated great courage in protecting those he loves.'
 }
-// Function to display if Joyce alive or dead
-document.getElementById('status7').addEventListener('click', joyceStatus)
-function joyceStatus(){
+// Function to display if Nancy alive or dead
+document.getElementById('status7').addEventListener('click', johnStatus)
+function johnStatus(){
     document.getElementById('hidden7').innerHTML ='Alive'
 }
 
@@ -109,7 +109,7 @@ function jimStatus(){
     document.getElementById('hidden10').innerHTML ='Alive'
 }
 
-// function to display Nancybio
+// function to display Nancy bio
 document.getElementById('bio11').addEventListener('click', nancyBio)
 function nancyBio(){
     document.getElementById('hidden11').innerHTML='Once seen as a spoiled popular girl, Nancy has proven to herself and others that she is more than just a pretty face.'
@@ -120,32 +120,32 @@ function nancyStatus(){
     document.getElementById('hidden11').innerHTML ='Alive'
 }
 
-// function to display Mikebio
-document.getElementById('bio12').addEventListener('click', mikeBio)
-function mikeBio(){
-    document.getElementById('hidden12').innerHTML='Over time Mike has shown the complications involved with loving Eleven, which have challenged him and lead to great character growth.'
+// function to display Joyce bio
+document.getElementById('bio12').addEventListener('click', joyceBio)
+function joyceBio(){
+    document.getElementById('hidden12').innerHTML="A determined mother with a fierce left swing, Joyce protects her family from the evils that invade Hawkins. Not escaping the heartache of losing the man she loved, this fighter continues on. "
 }
-// Function to display if Nancy alive or dead
-document.getElementById('status12').addEventListener('click', mikeStatus)
-function mikeStatus(){
+// Function to display if Joyce alive or dead
+document.getElementById('status12').addEventListener('click', joyceStatus)
+function joyceStatus(){
     document.getElementById('hidden12').innerHTML ='Alive'
 }
 
-// function to display Johnathan bio
-document.getElementById('bio13').addEventListener('click', johnBio)
-function johnBio(){
-    document.getElementById('hidden13').innerHTML='Once considered a loner, Johnathan has demonstrated great courage in protecting those he loves.'
+// function to display Mike bio
+document.getElementById('bio13').addEventListener('click', mikeBio)
+function mikeBio(){
+    document.getElementById('hidden13').innerHTML='Over time Mike has shown the complications involved with loving Eleven, which have challenged him and lead to great character growth.'
 }
-// Function to display if Nancy alive or dead
-document.getElementById('status13').addEventListener('click', johnStatus)
-function johnStatus(){
+// Function to display if Mike alive or dead
+document.getElementById('status13').addEventListener('click', mikeStatus)
+function mikeStatus(){
     document.getElementById('hidden13').innerHTML ='Alive'
 }
 
 // function to display Erica bio
 document.getElementById('bio14').addEventListener('click', ericaBio)
 function ericaBio(){
-    document.getElementById('hidden14').innerHTML='The fiery younger sister of Lucas, Erica has become a fierce fighter in the battle for Hawkins'
+    document.getElementById('hidden14').innerHTML='The fiery younger sister of Lucas, Erica has become a fierce fighter in the battle for Hawkins'   
 }
 // Function to display if Erica alive or dead
 document.getElementById('status14').addEventListener('click', ericaStatus)
@@ -187,16 +187,16 @@ searchInput.addEventListener("keyup", (event) => {
     }
 })
 
-document.getElementById('bio1').addEventListener('click', elevenBio)
-document.getElementById('bio2').addEventListener('click', lucasBio)  
-document.getElementById('bio3').addEventListener('click', steveBio) 
-document.getElementById('bio4').addEventListener('click', willBio)
-document.getElementById('bio5').addEventListener('click', maxBio)  
-document.getElementById('bio6').addEventListener('click', billyBio) 
-document.getElementById('status1').addEventListener('click', elevenStatus)
-document.getElementById('status2').addEventListener('click', lucasStatus)  
-document.getElementById('status3').addEventListener('click', steveStatus) 
-document.getElementById('status4').addEventListener('click', willStatus)
-document.getElementById('status5').addEventListener('click', maxStatus)  
-document.getElementById('status6').addEventListener('click', billyStatus) 
+// document.getElementById('bio1').addEventListener('click', elevenBio)
+// document.getElementById('bio2').addEventListener('click', lucasBio)  
+// document.getElementById('bio3').addEventListener('click', steveBio) 
+// document.getElementById('bio4').addEventListener('click', willBio)
+// document.getElementById('bio5').addEventListener('click', maxBio)  
+// document.getElementById('bio6').addEventListener('click', billyBio) 
+// document.getElementById('status1').addEventListener('click', elevenStatus)
+// document.getElementById('status2').addEventListener('click', lucasStatus)  
+// document.getElementById('status3').addEventListener('click', steveStatus) 
+// document.getElementById('status4').addEventListener('click', willStatus)
+// document.getElementById('status5').addEventListener('click', maxStatus)  
+// document.getElementById('status6').addEventListener('click', billyStatus) 
 
