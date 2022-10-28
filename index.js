@@ -98,6 +98,61 @@ function dustinStatus(){
     document.getElementById('hidden9').innerHTML ='Alive'
 }
 
+// function to display Jim bio
+document.getElementById('bio10').addEventListener('click', jimBio)
+function jimBio(){
+    document.getElementById('hidden10').innerHTML='A former man of the law, Jim elected to fight the evils of Hawkins with both his badge and his fists.'
+}
+// Function to display if Jim alive or dead
+document.getElementById('status10').addEventListener('click', jimStatus)
+function jimStatus(){
+    document.getElementById('hidden10').innerHTML ='Alive'
+}
+
+// function to display Nancybio
+document.getElementById('bio11').addEventListener('click', nancyBio)
+function nancyBio(){
+    document.getElementById('hidden11').innerHTML='Once seen as a spoiled popular girl, Nancy has proven to herself and others that she is more than just a pretty face.'
+}
+// Function to display if Nancy alive or dead
+document.getElementById('status11').addEventListener('click', nancyStatus)
+function nancyStatus(){
+    document.getElementById('hidden11').innerHTML ='Alive'
+}
+
+// function to display Mikebio
+document.getElementById('bio12').addEventListener('click', mikeBio)
+function mikeBio(){
+    document.getElementById('hidden12').innerHTML='Over time Mike has shown the complications involved with loving Eleven, which have challenged him and lead to great character growth.'
+}
+// Function to display if Nancy alive or dead
+document.getElementById('status12').addEventListener('click', mikeStatus)
+function mikeStatus(){
+    document.getElementById('hidden12').innerHTML ='Alive'
+}
+
+// function to display Johnathan bio
+document.getElementById('bio13').addEventListener('click', johnBio)
+function johnBio(){
+    document.getElementById('hidden13').innerHTML='Once considered a loner, Johnathan has demonstrated great courage in protecting those he loves.'
+}
+// Function to display if Nancy alive or dead
+document.getElementById('status13').addEventListener('click', johnStatus)
+function johnStatus(){
+    document.getElementById('hidden13').innerHTML ='Alive'
+}
+
+// function to display Erica bio
+document.getElementById('bio14').addEventListener('click', ericaBio)
+function ericaBio(){
+    document.getElementById('hidden14').innerHTML='The fiery younger sister of Lucas, Erica has become a fierce fighter in the battle for Hawkins'
+}
+// Function to display if Nancy alive or dead
+document.getElementById('status14').addEventListener('click', ericaStatus)
+function ericaStatus(){
+    document.getElementById('hidden14').innerHTML ='Alive'
+}
+
 // /////////////////////////////////////////////////////////
 // get search bar element
 const searchInput = document.getElementById("searchInput")
@@ -127,6 +182,9 @@ searchInput.addEventListener("keyup", (event) => {
     }
 })
 
+// function for sound
+let myAudio = document.querySelector('#audio')
+myAudio.play()
 
 
 document.getElementById('bio1').addEventListener('click', elevenBio)

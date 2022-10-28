@@ -91,3 +91,7 @@ h2 {
     margin-right: 40px;
 
 }
+
+#audio {
+    display: none;
+}
